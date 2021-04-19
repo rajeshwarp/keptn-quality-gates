@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      3
+    ],
+    "clusterVersion": "1.207.174.20201208-164048"
+  },
+  "id": "29782718-dfa1-47c2-9b1e-e1f77e008306",
+  "dashboardMetadata": {
+    "name": "KQG;project=demo-performance;service=easytravel;stage=performance",
+    "shared": false,
+    "owner": "andreas.grabner@dynatrace.com",
+    "sharingDetails": {
+      "linkShared": true,
+      "published": false
+    },
+    "dashboardFilter": {
+      "timeframe": ""
+    },
+    "tags": null
+  },
+  "tiles": [
+    {
+      "name": "Top Failing Transactions",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "Explorer results",
+      "Markdown": "",
+      "bounds": {
+        "top": 342,
+        "left": 0,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": [
+        {
+          "id": "A",
+          "metric": "jmeter.usermetrics.transaction.error",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "transaction"
+          ]
+        }
+      ],
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "",
+      "Markdown": "",
+      "bounds": {
+        "top": 342,
+        "left": 988,
+        "width": 494,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": null,
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Test Step Service Calls;sli=svc2svcx;pass=\u003c=2",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "calc:service.teststepservicecalls",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [
+                {
+                  "id": "1",
+                  "name": "Test Step",
+                  "values": [],
+                  "entitiyDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "JMeter Thread Count;sli=threadcount",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "Explorer results",
+      "Markdown": "",
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 304,
+        "height": 114
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": [
+        {
+          "id": "A",
+          "metric": "jmeter.usermetrics.startedthreads",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": []
+        }
+      ],
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "JMeter Overall Transaction Success;sli=txsuccess",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "Explorer results",
+      "Markdown": "",
+      "bounds": {
+        "top": 152,
+        "left": 0,
+        "width": 304,
+        "height": 114
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": [
+        {
+          "id": "A",
+          "metric": "jmeter.usermetrics.transaction.success",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": []
+        }
+      ],
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "JMeter Stats per Test Name",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "Explorer results",
+      "Markdown": "",
+      "bounds": {
+        "top": 38,
+        "left": 988,
+        "width": 494,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": [
+        {
+          "id": "A",
+          "metric": "jmeter.usermetrics.transaction.meantime",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "transaction"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          }
+        },
+        {
+          "id": "B",
+          "metric": "jmeter.usermetrics.transaction.hits",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "transaction"
+          ]
+        },
+        {
+          "id": "C",
+          "metric": "jmeter.usermetrics.transaction.error",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "transaction"
+          ]
+        }
+      ],
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "Response Time Server Side;sli=rt_ss;pass=\u003c2000",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "Explorer results",
+      "Markdown": "",
+      "bounds": {
+        "top": 342,
+        "left": 304,
+        "width": 684,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": [
+        {
+          "id": "A",
+          "metric": "calc:service.teststepresponsetime",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "Test Step"
+          ]
+        }
+      ],
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "My great JMeter metrics;sli=mymetrics",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "Explorer results",
+      "Markdown": "",
+      "bounds": {
+        "top": 646,
+        "left": 0,
+        "width": 988,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": [
+        {
+          "id": "A",
+          "metric": "jmeter.usermetrics.transaction.sentbytes",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "transaction"
+          ]
+        },
+        {
+          "id": "B",
+          "metric": "jmeter.usermetrics.transaction.mintime",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "transaction"
+          ]
+        }
+      ],
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    },
+    {
+      "name": "JMeter Transactions Median;sli=jm_tx_med;pass=\u003c=1500;warning=\u003c300;",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "CustomName": "Explorer results",
+      "Markdown": "",
+      "bounds": {
+        "top": 38,
+        "left": 304,
+        "width": 684,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": [
+        {
+          "id": "A",
+          "metric": "jmeter.usermetrics.transaction.meantime",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "transaction"
+          ]
+        }
+      ],
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    }
+  ]
+}

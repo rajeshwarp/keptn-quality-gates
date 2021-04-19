@@ -1,0 +1,84 @@
+spec_version: 0.1.4
+indicators:
+  jm_tx_med_1Home_Page: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,1Home
+    Page))
+  jm_tx_med_2CalculateRecommendations: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,2CalculateRecommendations))
+  jm_tx_med_3Login: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,3Login))
+  jm_tx_med_4Random_Search: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,4Random
+    Search))
+  jm_tx_med_5Select_Journey: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,5Select
+    Journey))
+  jm_tx_med_6Select_Payment: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,6Select
+    Payment))
+  jm_tx_med_7Mock_Creditcard_Number: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,7Mock
+    Creditcard Number))
+  jm_tx_med_8Submit_Payment: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,8Submit
+    Payment))
+  jm_tx_med_9Finish_Payment: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,9Finish
+    Payment))
+  jm_tx_med_Invalidate_Session: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.meantime:avg:names:filter(eq(transaction,Invalidate
+    Session))
+  mymetrics_1Home_Page: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,1Home
+    Page))
+  mymetrics_2CalculateRecommendations: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,2CalculateRecommendations))
+  mymetrics_3Login: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,3Login))
+  mymetrics_4Random_Search: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,4Random
+    Search))
+  mymetrics_5Select_Journey: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,5Select
+    Journey))
+  mymetrics_6Select_Payment: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,6Select
+    Payment))
+  mymetrics_7Mock_Creditcard_Number: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,7Mock
+    Creditcard Number))
+  mymetrics_8Submit_Payment: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,8Submit
+    Payment))
+  mymetrics_9Finish_Payment: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,9Finish
+    Payment))
+  mymetrics_Invalidate_Session: MV2;Unspecified;metricSelector=jmeter.usermetrics.transaction.mintime:avg:names:filter(eq(transaction,Invalidate
+    Session))
+  rt_ss_: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,))
+  rt_ss_1Home_Page: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,1Home Page))
+  rt_ss_2CalculateRecommendations: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,2CalculateRecommendations))
+  rt_ss_3Login: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,3Login))
+  rt_ss_4Random_Search: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,4Random Search))
+  rt_ss_5Select_Journey: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,5Select Journey))
+  rt_ss_6Select_Payment: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,6Select Payment))
+  rt_ss_7Mock_Creditcard_Number: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,7Mock Creditcard Number))
+  rt_ss_8Submit_Payment: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,8Submit Payment))
+  rt_ss_9Finish_Payment: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,9Finish Payment))
+  rt_ss_Invalidate_Session: MV2;MicroSecond;metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
+    Step,Invalidate Session))
+  svc2svcx_: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,))&entitySelector=type(SERVICE)
+  svc2svcx_1Home_Page: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,1Home Page))&entitySelector=type(SERVICE)
+  svc2svcx_2CalculateRecommendations: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,2CalculateRecommendations))&entitySelector=type(SERVICE)
+  svc2svcx_3Login: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,3Login))&entitySelector=type(SERVICE)
+  svc2svcx_4Random_Search: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,4Random Search))&entitySelector=type(SERVICE)
+  svc2svcx_5Select_Journey: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,5Select Journey))&entitySelector=type(SERVICE)
+  svc2svcx_6Select_Payment: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,6Select Payment))&entitySelector=type(SERVICE)
+  svc2svcx_7Mock_Creditcard_Number: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,7Mock Creditcard Number))&entitySelector=type(SERVICE)
+  svc2svcx_8Submit_Payment: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,8Submit Payment))&entitySelector=type(SERVICE)
+  svc2svcx_9Finish_Payment: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,9Finish Payment))&entitySelector=type(SERVICE)
+  svc2svcx_Basic_Check: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,Basic Check))&entitySelector=type(SERVICE)
+  svc2svcx_Invalidate_Session: MV2;Count;metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
+    Step,Invalidate Session))&entitySelector=type(SERVICE)

@@ -1,0 +1,362 @@
+spec_version: ""
+filter: {}
+comparison:
+  compare_with: single_result
+  include_result_with_score: pass
+  number_of_comparison_results: 1
+  aggregate_function: avg
+objectives:
+- sli: svc2svcx_2CalculateRecommendations
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_3Login
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_4Random_Search
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_5Select_Journey
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_7Mock_Creditcard_Number
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_Basic_Check
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_Invalidate_Session
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_8Submit_Payment
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_9Finish_Payment
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_6Select_Payment
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_1Home_Page
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc2svcx_
+  pass:
+  - criteria:
+    - <=2
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_4Random_Search
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_2CalculateRecommendations
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_Invalidate_Session
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_3Login
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_5Select_Journey
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_1Home_Page
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_7Mock_Creditcard_Number
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_6Select_Payment
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_9Finish_Payment
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: rt_ss_8Submit_Payment
+  pass:
+  - criteria:
+    - <2000
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_8Submit_Payment
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_9Finish_Payment
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_4Random_Search
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_7Mock_Creditcard_Number
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_3Login
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_Invalidate_Session
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_2CalculateRecommendations
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_6Select_Payment
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_5Select_Journey
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_1Home_Page
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_2CalculateRecommendations
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_4Random_Search
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_Invalidate_Session
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_3Login
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_5Select_Journey
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_1Home_Page
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_6Select_Payment
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_8Submit_Payment
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_9Finish_Payment
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: mymetrics_7Mock_Creditcard_Number
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_4Random_Search
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_2CalculateRecommendations
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_Invalidate_Session
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_3Login
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_9Finish_Payment
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_5Select_Journey
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_8Submit_Payment
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_1Home_Page
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_6Select_Payment
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+- sli: jm_tx_med_7Mock_Creditcard_Number
+  pass:
+  - criteria:
+    - <=1500
+  warning:
+  - criteria:
+    - <300
+  weight: 1
+  key_sli: false
+total_score:
+  pass: 90%
+  warning: 75%
